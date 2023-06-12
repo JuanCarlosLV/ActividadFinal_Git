@@ -1,0 +1,14 @@
+# Reglas para java
+*.class
+
+.log
+
+.jar
+.war
+.zip
+.rar
+
+# Reglas para Intellij
+*.idea/
+out/
+.iml
