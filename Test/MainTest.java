@@ -10,7 +10,7 @@ public class MainTest {
         System.out.println("Test 1");
         int primerNumero = 5;
         int segundoNumero = 10;
-        String esperado = "6\n7\n8\n9\n";
+        String esperado = "6\n8\n";
         String actual = Main.imprimirRango(primerNumero, segundoNumero);
         assertEquals(esperado, actual);
     }
@@ -32,7 +32,7 @@ public class MainTest {
         System.out.println("Test 3");
         int primerNumero = -4;
         int segundoNumero = 4;
-        String esperado = "-3\n-2\n-1\n0\n1\n2\n3\n";
+        String esperado = "-2\n0\n2\n";
         String actual = Main.imprimirRango(primerNumero, segundoNumero);
         assertEquals(esperado, actual);
     }
@@ -53,6 +53,15 @@ public class MainTest {
         int primerNumero = 3;
         int segundoNumero = 3;
         String esperado = "Debes ingresar un numero diferente a 0 o que no sean iguales";
+        String actual = Main.imprimirRango(primerNumero, segundoNumero);
+        assertEquals(esperado, actual);
+    }
+    @Test
+    public void test6() {
+        System.out.println("Test 6");
+        int primerNumero = 1;
+        int segundoNumero = 10;
+        String esperado = "2\n4\n6\n8";
         String actual = Main.imprimirRango(primerNumero, segundoNumero);
         assertEquals(esperado, actual);
     }
