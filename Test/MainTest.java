@@ -8,9 +8,9 @@ public class MainTest {
     @Test
     public void test1() {
         System.out.println("Test 1");
-        int primerNumero = 1;
+        int primerNumero = 2;
         int segundoNumero = 10;
-        String esperado = "3\n5\n7\n9\n";
+        String esperado = "4\n6\n8\n";
         String actual = Main.imprimirRango(primerNumero, segundoNumero);
         assertEquals(esperado, actual);
     }
@@ -32,7 +32,7 @@ public class MainTest {
         System.out.println("Test 3");
         int primerNumero = -4;
         int segundoNumero = 4;
-        String esperado = "-3\n-1\n1\n3\n";
+        String esperado = "-2\n0\n2\n";
         String actual = Main.imprimirRango(primerNumero, segundoNumero);
         assertEquals(esperado, actual);
     }

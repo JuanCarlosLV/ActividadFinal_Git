@@ -37,7 +37,7 @@ public class Main {
         } else {
             System.out.println("El rango de numeros entre " + primerNumero + " y " + segundoNumero + " son: ");
             while (numeroActual < segundoNumero) {
-                if (numeroActual % 2 != 0) {
+                if (numeroActual % 2 == 0) {
                     rango.append(numeroActual).append("\n");
                 }
                 numeroActual++;
